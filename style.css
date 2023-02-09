@@ -1,4 +1,17 @@
-/* Webfont: Mafins-Regular */@font-face {
+body {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 55px; 
+    font-family: "Mafins", Georgia; 
+  }
+
+/* Webfont: Mafins-Regular */
+@font-face {
     font-family: 'Mafins';
     src: url('fonts/Mafins/Web-TT/Mafins.eot'); /* IE9 Compat Modes */
     src: url('fonts/Mafins/Web-TT/Mafins.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -9,3 +22,27 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
+.fixed-position {
+    position: fixed;
+}
+
+img.emojione {  
+    margin: 0px !important;
+    display: inline !important;
+}
+
+.flag-emoji {
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    padding-left: .5%;
+}
+  
+@media only screen and (max-width: 600px) {
+    .flag-emoji {
+        font-size: 75px;
+    }
+}
+
+span{font-size:2rem;}
