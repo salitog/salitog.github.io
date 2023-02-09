@@ -1,0 +1,11 @@
+/* Webfont: Mafins-Regular */@font-face {
+    font-family: 'Mafins';
+    src: url('fonts/Mafins/Web-TT/Mafins.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Mafins/Web-TT/Mafins.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Mafins/Web-TT/Mafins.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Mafins/Web-TT/Mafins.woff2') format('woff2'), /* Modern Browsers */
+         url('fonts/Mafins/Web-TT/Mafins.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
