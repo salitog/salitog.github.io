@@ -7,7 +7,6 @@ body {
     align-items: center;
     height: 100vh;
     font-size: 55px; 
-    font-family: "Mafins", Georgia; 
   }
 
 /* Webfont: Mafins-Regular */
@@ -23,8 +22,15 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-.fixed-position {
+.middle-text {
+    font-family: "Mafins", Georgia; 
+}
+
+#bottom {
+    font-family: "Mafins", Georgia;
     position: fixed;
+    bottom: 0;
+    left: auto;
 }
 
 img.emojione {  
@@ -33,6 +39,7 @@ img.emojione {
 }
 
 .flag-emoji {
+    position: fixed;
     top: 0;
     left: 0;
     font-size: 50px;
