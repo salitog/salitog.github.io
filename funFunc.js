@@ -8,7 +8,7 @@ window.addEventListener('touchstart', function(event) {
 
 window.addEventListener('touchmove', function(event) {
   let currentY = event.touches[0].clientY;
-  let scrollDirection = (currentY > startY) ? 'down' : 'up';
+  let scrollDirection = (currentY < startY) ? 'down' : 'up';
 
   console.log('Scrolling direction:', scrollDirection);
   middleText.innerHTML = scrollDirection;
@@ -29,6 +29,7 @@ window.addEventListener('wheel', function(event) {
   let currentScrollPosition = previousScrollPosition + event.deltaY;
   window.scrollTo(0, 0);
   let scrollDirection = (currentScrollPosition > previousScrollPosition) ? 'down' : 'up';
+  console.log('Scrolling direction:', scrollDirection);
   middleText.innerHTML = scrollDirection;
 
   previousScrollPosition = currentScrollPosition;
